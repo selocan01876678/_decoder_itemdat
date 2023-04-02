@@ -256,7 +256,7 @@ int main()
 			}
 		}
 		memPos += 80;
-		if(itemsdatVersion >= 13) {
+		if(itemsdatVersion >= 11) {
 			{
 				int16_t strLen = *(int16_t*)&data[memPos];
 				memPos += 2;
@@ -270,7 +270,7 @@ int main()
 			// TODO: find what those data mean
 			memPos += 13;
 		}
-                If (itemsdatVersion >= 13) {
+                If (itemsdatVersion >= 14) {
                       memPos += 4;
                 }
 		if (i != itemID)
